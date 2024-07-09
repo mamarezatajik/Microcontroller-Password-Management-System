@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+passwords                                                                         0x0260     100
+Seconds                                                                           0x02C4      50
+Minutes                                                                           0x02F6      50
+Hours                                                                             0x0328      50
+one                                                                               0x035A      50
+two                                                                               0x038C      50
+three                                                                             0x03BE      50
+four                                                                              0x03F0      50
+entered_password                                                                  0x0422       5
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+time                                                                              R4,R5        2
+delay                                                                             R6,R7        2
+password_count                                                                    R8,R9        2
+save_count                                                                        R10,R11      2
+mode                                                                              R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ReadKeypad                                                                        0x00072     83
+display_time                                                                      0x000C5     52
+save_progress                                                                     0x000F9     53
+timer1_compa_isr                                                                  0x0012E     66
+main                                                                              0x00170    230
+strcmp                                                                            0x00256     20
+strcpy                                                                            0x0026A     13
